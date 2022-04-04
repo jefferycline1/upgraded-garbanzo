@@ -1,0 +1,16 @@
+{
+  "profiles": {
+    "ConsoleApp1": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "Key": "Value"
+      },
+      "sqlDebugging": false,
+      "nativeDebugging": false,
+      "jsWebView2Debugging": true
+    },
+    "newProfile1": {
+      "commandName": "Executable"
+    }
+  }
+}
