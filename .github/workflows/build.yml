@@ -65,7 +65,7 @@ jobs:
           DESTDIR=`pwd`/dest make install
           tar -C dest -cf ideviceinstaller.tar usr
     - name: publish artifact
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v4
       with:
         name: ideviceinstaller-latest_${{env.target_triplet}}
         path: ideviceinstaller.tar
@@ -166,7 +166,7 @@ jobs:
           DESTDIR=`pwd`/dest make install
           tar -C dest -cf ideviceinstaller.tar usr
     - name: publish artifact
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v4
       with:
         name: ideviceinstaller-latest_macOS
         path: ideviceinstaller.tar
@@ -259,7 +259,7 @@ jobs:
           DESTDIR=`pwd`/dest make install
           tar -C dest -cf ideviceinstaller.tar ${{ env.dest }}
     - name: publish artifact
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v4
       with:
         name: ideviceinstaller-latest_${{ matrix.arch }}-${{ env.dest }}
         path: ideviceinstaller.tar
